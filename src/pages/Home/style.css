@@ -1,0 +1,32 @@
+.homeSubTitle{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.homeTitle{
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.layout-content{
+  background-color: rgb(255, 255, 255);
+  width: auto;
+  height: 400px;
+}
+
+.layout-content-itens{
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itens{
+  margin-inline: 10px;
+}
+
+.relogio{
+  transform: translateX(-600px) rotate(180deg);
+  opacity: 0;
+
+}
