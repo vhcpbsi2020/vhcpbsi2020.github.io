@@ -72,7 +72,7 @@ function Home() {
             width={200}
           />
         </div>
-
+        oiii
         <div className="itens">
           <img
             src="https://www.bhphotovideo.com/images/images2500x2500/apple_mj2x2ll_a_watch_sport_smartwatch_38mm_1187194.jpg"
