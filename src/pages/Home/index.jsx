@@ -43,6 +43,7 @@ function Home() {
           </div>
           <div>
             <img style={contentStyle} src={logo} alt="" />
+            oi testando
           </div>
           <div>
             <img style={contentStyle} src={logo} alt="" />
