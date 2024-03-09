@@ -1,98 +1,121 @@
-import { useLayoutEffect } from "react";
 import "./style.css";
-import { Carousel } from "antd";
-import logo from "../../assets/OMBA.png";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+import { Carousel, Card } from "antd";
+import imgTopo from "../../assets/OMBA_TOPO.png";
+import CarrouselFeed from "../../components/carrousel";
 const contentStyle = {
-  height: "300px",
+  height: "450px",
   color: "#fff",
   lineHeight: "100px",
   textAlign: "center",
 };
 
-function Home() {
-  useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger)
-    gsap.to(".relogio", {
-      x: 0,
-      opacity: 1,
-      rotate: "0deg",
-      scrollTrigger: {
-        trigger: ".layout-content-itens",
-        markers: false,
-        start: "top 300",
-        end: "bottom 600",
-        scrub: true
-      }
-    })
+const cardImgStyle = {
+  width: "340px",
+};
 
-    return () => {
-      gsap.killTweensOf(".relogio")
-    }
-  }, []);
+const cardStyle = {
+  fontSize: 12,
+  alignItems: "center",
+  display: "flex",
+  justifyContent: "center",
+};
+
+const { Meta } = Card;
+
+function Home() {
   return (
     <>
       <section className="layout-carousel">
-        <Carousel autoplay>
+        <img src={imgTopo} alt="" />
+
+        <Carousel style={{ paddingTop: 20 }} autoplay autoplaySpeed={2000}>
           <div>
-            <img style={contentStyle} src={logo} alt="" />
+            <img
+              style={contentStyle}
+              src="src/assets/img_carrousel/usoMadeira.png"
+              alt=""
+            />
           </div>
+
           <div>
-            <img style={contentStyle} src={logo} alt="" />
-          </div>
-          <div>
-            <img style={contentStyle} src={logo} alt="" />
-            oi testando
-          </div>
-          <div>
-            <img style={contentStyle} src={logo} alt="" />
+            <img
+              style={contentStyle}
+              src="src/assets/img_carrousel/futMadeira.png"
+              alt=""
+            />
           </div>
         </Carousel>
       </section>
 
       <section className="layout-content">
+        <h1>Noticias</h1>
 
+        <Carousel autoplay style={{ height: 215 }}>
+          <div
+            style={{
+              alignItems: "center",
+              textAlign: "center",
+              justifyContent: "center",
+              display: "grid",
+            }}
+          >
+            <a
+              href="https://observatoriomfcf.org.br/noticias/para-o-estado-que-mais-desmata-na-amazonia"
+              target="_blank"
+            >
+              <Card
+                hoverable
+                style={cardStyle}
+                cover={
+                  <img
+                    style={cardImgStyle}
+                    alt="example"
+                    src="https://observatoriomfcf.org.br/wp-content/uploads/2021/04/image_processing20210402-29999-4j7xha.jpeg"
+                  />
+                }
+              >
+                <Meta
+                  style={{ fontSize: 20 }}
+                  title="Pará, o estado que mais desmata na Amazônia"
+                  description="observatoriomfcf.org.br"
+                />
+              </Card>
+            </a>
+          </div>
+
+          <div>
+            <a
+              href="https://deolhonosruralistas.com.br/2021/05/05/madeireiros-pressionam-comunidades-a-apoiar-extracao-de-madeira-em-resex-diz-sindicato/"
+              target="_blank"
+            >
+              <Card
+                hoverable
+                style={cardStyle}
+                cover={
+                  <img
+                    style={{ width: 286 }}
+                    alt="example"
+                    src="https://deolhonosruralistas.com.br/wp-content/uploads/2021/05/ATL-6897.jpg"
+                  />
+                }
+              >
+                <Meta
+                  style={{ fontSize: 20 }}
+                  title="Madeireiros pressionam comunidades a apoiar extração de madeira em Resex, diz sindicato"
+                  description="deolhonosruralistas.com.br"
+                />
+              </Card>
+            </a>
+          </div>
+        </Carousel>
+
+        <div className="div-noticias"></div>
+
+        <div></div>
       </section>
 
-      <section className="layout-content-itens">
-        <div className="itens">
-          <img className="relogio"
-            src="https://www.bhphotovideo.com/images/images2500x2500/apple_mj2x2ll_a_watch_sport_smartwatch_38mm_1187194.jpg"
-            width={200}
-          />
-        </div>np
-
-      </section>
-
-      <section className="layout-content-itens">
-        <div>
-          test
-          <img
-            src="https://www.bhphotovideo.com/images/images2500x2500/apple_mj2x2ll_a_watch_sport_smartwatch_38mm_1187194.jpg"
-            width={200}
-          />
-        </div>
-        oiii
-        <div className="itens">
-          <img
-            src="https://www.bhphotovideo.com/images/images2500x2500/apple_mj2x2ll_a_watch_sport_smartwatch_38mm_1187194.jpg"
-            width={200}
-          />
-        </div>
-        <div className="itens">
-          <img
-            src="https://www.bhphotovideo.com/images/images2500x2500/apple_mj2x2ll_a_watch_sport_smartwatch_38mm_1187194.jpg"
-            width={200}
-          />
-        </div>
-        <div className="itens">
-          <img
-            src="https://www.bhphotovideo.com/images/images2500x2500/apple_mj2x2ll_a_watch_sport_smartwatch_38mm_1187194.jpg"
-            width={200}
-          />
-        </div>
-      </section>
+      <CarrouselFeed nome={"Artigos"} />
     </>
   );
 }
