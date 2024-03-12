@@ -23,9 +23,9 @@ function getItem(label, key, icon, path) {
 
 const items = [
   getItem("Home", "1", <HomeOutlined />, "/"),
-  getItem("Nossa Historia", "2", <BookOutlined />, "/NossaHistoria"),
+  getItem("Acervo Florestal", "2", <BookOutlined />, "/NossaHistoria"),
   getItem("Quem somos?", "3", null, "/QuemSomos"),
-  getItem("Dados", "4", <AreaChartOutlined />, "/Dados"),
+  getItem("Gráficos", "4", <AreaChartOutlined />, "/graficos"),
   getItem("Mapas", "5", <FlagOutlined />, "/Mapas"),
 ];
 

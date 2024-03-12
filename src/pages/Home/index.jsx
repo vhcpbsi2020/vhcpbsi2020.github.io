@@ -29,24 +29,21 @@ function Home() {
       <section className="layout-carousel">
         <img src={imgTopo} alt="" />
 
-        <Carousel style={{ paddingTop: 20 }} autoplay autoplaySpeed={2000}>
-          <div>
-            <img
-              style={contentStyle}
-              src="src/assets/img_carrousel/usoMadeira.png"
-              alt=""
-            />
+        
+          <div className="my-div">
+
+            <div className="entrance-animation">
+              <h1 >+ INFORMAÇÕES RELEVANTES</h1>
+              <h1 >+ MAPAS</h1>
+              <h1 >+ GRÁFICOS</h1>
+              <p>Tudo em um só lugar!</p>
+            </div>
+          
           </div>
 
-          <div>
-            <img
-              style={contentStyle}
-              src="src/assets/img_carrousel/futMadeira.png"
-              alt=""
-            />
-          </div>
-        </Carousel>
       </section>
+
+      
 
       <section className="layout-content">
         <h1>Noticias</h1>
@@ -112,7 +109,9 @@ function Home() {
 
         <div className="div-noticias"></div>
 
-        <div></div>
+        <div>
+          
+        </div>
       </section>
 
       <CarrouselFeed nome={"Artigos"} />
