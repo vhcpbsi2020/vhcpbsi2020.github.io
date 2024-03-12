@@ -3,12 +3,6 @@ import "./style.css";
 import { Carousel, Card } from "antd";
 import imgTopo from "../../assets/OMBA_TOPO.png";
 import CarrouselFeed from "../../components/carrousel";
-const contentStyle = {
-  height: "450px",
-  color: "#fff",
-  lineHeight: "100px",
-  textAlign: "center",
-};
 
 const cardImgStyle = {
   width: "340px",
