@@ -3,12 +3,6 @@ import "./style.css";
 import { Carousel, Card } from "antd";
 import imgTopo from "../../assets/OMBA_TOPO.png";
 import CarrouselFeed from "../../components/carrousel";
-const contentStyle = {
-  height: "450px",
-  color: "#fff",
-  lineHeight: "100px",
-  textAlign: "center",
-};
 
 const cardImgStyle = {
   width: "340px",
@@ -29,24 +23,21 @@ function Home() {
       <section className="layout-carousel">
         <img src={imgTopo} alt="" />
 
-        <Carousel style={{ paddingTop: 20 }} autoplay autoplaySpeed={2000}>
-          <div>
-            <img
-              style={contentStyle}
-              src="src/assets/img_carrousel/usoMadeira.png"
-              alt=""
-            />
+        
+          <div className="my-div">
+
+            <div className="entrance-animation">
+              <h1 >+ INFORMAÇÕES RELEVANTES</h1>
+              <h1 >+ MAPAS</h1>
+              <h1 >+ GRÁFICOS</h1>
+              <p>Tudo em um só lugar!</p>
+            </div>
+          
           </div>
 
-          <div>
-            <img
-              style={contentStyle}
-              src="src/assets/img_carrousel/futMadeira.png"
-              alt=""
-            />
-          </div>
-        </Carousel>
       </section>
+
+      
 
       <section className="layout-content">
         <h1>Noticias</h1>
@@ -112,7 +103,9 @@ function Home() {
 
         <div className="div-noticias"></div>
 
-        <div></div>
+        <div>
+          
+        </div>
       </section>
 
       <CarrouselFeed nome={"Artigos"} />
