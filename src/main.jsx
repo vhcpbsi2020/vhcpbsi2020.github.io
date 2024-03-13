@@ -23,9 +23,9 @@ function getItem(label, key, icon, path) {
 
 const items = [
   getItem("Home", "1", <HomeOutlined />, "/"),
-  getItem("Nossa Historia", "2", <BookOutlined />, "/NossaHistoria"),
+  getItem("Acervo Florestal", "2", <BookOutlined />, "/NossaHistoria"),
   getItem("Quem somos?", "3", null, "/QuemSomos"),
-  getItem("Dados", "4", <AreaChartOutlined />, "/Dados"),
+  getItem("Gráficos", "4", <AreaChartOutlined />, "/graficos"),
   getItem("Mapas", "5", <FlagOutlined />, "/Mapas"),
 ];
 
@@ -33,6 +33,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Layout>
       <Header
+        className="sticky-menu"
         style={{
           display: "flex",
           alignItems: "center",
@@ -56,7 +57,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           {items}
         </Menu>
       </Header>
-      <Content style={{}}>
+      <Content style={{marginTop: 60, display: 'block', justifyContent: 'center'}}>
         <MainRoutes />
       </Content>
 
@@ -64,29 +65,33 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         style={{
           textAlign: "center",
           backgroundColor: "#506635",
-          color:"#ffff",
-          fontWeight: "400"
+          color: "#ffff",
+          fontWeight: "400",
         }}
       >
-        
-    <div>
-      <h3>Endereço: </h3>
-      <p>Rua Exemplo, 123<br></br>Cidade, Estado, CEP</p>
-    </div>
-    <div>
-      <h3>Contato:</h3>
-      <p>Email: exemplo@dominio.com<br></br>Telefone: (00) 12345-6789</p>
-    </div>
-    <div>
-      <h3>Redes Sociais</h3>
-      <p>
-        <a href="https://www.facebook.com/exemplo">Facebook</a><br></br>
-        <a href="https://www.twitter.com/exemplo">Twitter</a><br></br>
-        <a href="https://www.instagram.com/exemplo">Instagram</a>
-      </p>
-  </div>
-    <p>© 2024 OMBA. Todos os direitos reservados.</p>
-
+        <div>
+          <h3>Endereço: </h3>
+          <p>
+            Rua Exemplo, 123<br></br>Cidade, Estado, CEP
+          </p>
+        </div>
+        <div>
+          <h3>Contato:</h3>
+          <p>
+            Email: exemplo@dominio.com<br></br>Telefone: (00) 12345-6789
+          </p>
+        </div>
+        <div>
+          <h3>Redes Sociais</h3>
+          <p>
+            <a href="https://www.facebook.com/exemplo">Facebook</a>
+            <br></br>
+            <a href="https://www.twitter.com/exemplo">Twitter</a>
+            <br></br>
+            <a href="https://www.instagram.com/exemplo">Instagram</a>
+          </p>
+        </div>
+        <p>© 2024 OMBA. Todos os direitos reservados.</p>
       </Footer>
     </Layout>
   </BrowserRouter>

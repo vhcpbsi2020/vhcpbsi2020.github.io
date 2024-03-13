@@ -1,32 +1,57 @@
-.homeSubTitle{
+@keyframes slide-in {
+  0% {
+    right: 100%; /* Começa fora da tela */
+    opacity: -2;
+  }
+  100% {
+    right: 0; /* Termina no local original */
+    opacity: 0.9;
+  }
+}
+
+.homeSubTitle {
   font-size: 20px;
   font-weight: 700;
 }
 
-.homeTitle{
+.homeTitle {
   font-size: 32px;
   font-weight: 400;
 }
 
-.layout-content{
+.layout-content {
   background-color: rgb(255, 255, 255);
   width: auto;
-  height: 400px;
+  height: 320px;
+  background-color: #506635;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  text-align: center;
 }
 
-.layout-content-itens{
-  height: 600px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.layout-content h1 {
+  color: aliceblue;
+  padding: 20px;
+  font-size: 32px;
+}
+.my-div {
+  background-image: url("https://amazoniareal.com.br/wp-content/uploads/2023/01/MADEIRA-ILEGAL-DESMATAMENTO-AMAZONIA-FOTO-GREENPEACE-3a-e1672695537381.jpg");
+  height: 750px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: multiply;
+justify-content: center;}
+
+.entrance-animation {
+  position: absolute;
+  animation: slide-in 3s forwards;
+  color: white;
+  padding: 40px;
+  padding-top: 250px;
+  font-size: 40px;
+  font-weight: 600;
 }
 
-.itens{
-  margin-inline: 10px;
-}
-
-.relogio{
-  transform: translateX(-600px) rotate(180deg);
-  opacity: 0;
-
+.div-noticias {
 }
