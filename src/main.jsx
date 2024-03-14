@@ -38,6 +38,7 @@ const items = [
   getItem("Gráficos", "4", <AreaChartOutlined />, "/graficos"),
   getItem("Mapas", "5", <FlagOutlined />, "/Mapas"),
   <OrgaosSubMenu/>
+
 ];
 
 ReactDOM.createRoot(document.getElementById("root")).render(
