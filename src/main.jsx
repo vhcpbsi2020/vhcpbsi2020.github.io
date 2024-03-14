@@ -20,13 +20,25 @@ function getItem(label, key, icon, path) {
     </Menu.Item>
   );
 }
+const OrgaosSubMenu = () => (
+  <Menu.SubMenu key="7" title="Orgãos Fiscais" icon={<FlagOutlined />}>
+    <Link to={"/ibama"}>
+    <Menu.Item key="IBAMA">IBAMA</Menu.Item> 
+      </Link>
+      <Link to={"/icmbio"}>
+    <Menu.Item key="ICMBIO">ICMBIO</Menu.Item>
+      </Link>
+  </Menu.SubMenu>
+)
 
 const items = [
   getItem("Home", "1", <HomeOutlined />, "/"),
   getItem("Acervo Florestal", "2", <BookOutlined />, "/NossaHistoria"),
   getItem("Quem somos?", "3", null, "/QuemSomos"),
   getItem("Gráficos", "4", <AreaChartOutlined />, "/graficos"),
-  getItem("Mapas", "5", <FlagOutlined />, "/mapas"),
+  getItem("Mapas", "5", <FlagOutlined />, "/Mapas"),
+  <OrgaosSubMenu/>
+
 ];
 
 ReactDOM.createRoot(document.getElementById("root")).render(

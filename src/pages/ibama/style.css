@@ -1,0 +1,9 @@
+.div-topo{
+    background-image: url("./img/comando-e-controle.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    height: 750px;
+    align-items: center;
+    justify-content: center;
+}
