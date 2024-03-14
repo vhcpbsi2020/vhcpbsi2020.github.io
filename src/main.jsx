@@ -26,7 +26,7 @@ const items = [
   getItem("Acervo Florestal", "2", <BookOutlined />, "/NossaHistoria"),
   getItem("Quem somos?", "3", null, "/QuemSomos"),
   getItem("Gráficos", "4", <AreaChartOutlined />, "/graficos"),
-  getItem("Mapas", "5", <FlagOutlined />, "/Mapas"),
+  getItem("Mapas", "5", <FlagOutlined />, "/mapas"),
 ];
 
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -68,7 +68,7 @@ function Home() {
               >
                 <Meta
                   style={{ fontSize: 20 }}
-                  title="Pará, o estado que mais desmata na Amazônia"
+                  title="Pará, o estado que mais desmata na Amazônia2"
                   description="observatoriomfcf.org.br"
                 />
               </Card>
