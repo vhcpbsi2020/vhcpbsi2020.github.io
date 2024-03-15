@@ -15,7 +15,7 @@ function CarrouselFeed({ nome }) {
   return (
     <>
       <section className="layout-content">
-        <h1>{nome}</h1>
+        <h1 style={{fontWeight: 600}}>{nome}</h1>
 
         <Carousel autoplay style={{ height: 215 }}>
           <div

@@ -40,7 +40,7 @@ function Home() {
       
 
       <section className="layout-content">
-        <h1>Noticias</h1>
+        <h1 style={{fontWeight: 600}}>Noticias</h1>
 
         <Carousel autoplay style={{ height: 215 }}>
           <div
@@ -108,7 +108,7 @@ function Home() {
         </div>
       </section>
 
-      <CarrouselFeed nome={"Artigos"} />
+      <CarrouselFeed  nome={"Artigos"} />
     </>
   );
 }

@@ -18,7 +18,7 @@ function PageIcmbio() {
         fontWeight: 600,
         display: "flex",
         flexDirection: "column",
-      }}>
+      }}  >
       <div>
         <h1 style={{ color: "white", fontSize: 50 }}>Serviços: </h1>
       </div>
@@ -30,35 +30,35 @@ function PageIcmbio() {
         style={{ justifyContent: "center" }}
       >
         <a
-          href="https://servicos.ibama.gov.br/licenciamento/consulta_rel_licencia_por_periodo.php"
+          href="https://www.gov.br/icmbio/pt-br/servicos/servicos-do-icmbio-no-gov.br/autorizacoes"
           target="_blank"
         >
           <Button type="primary" danger style={styleButton}>
-            Licenciamento por período
+            Autorizações
           </Button>
         </a>
         <a
-          href="https://servicos.ibama.gov.br/licenciamento/consulta_rel_licencia_por_ano.php"
+          href="https://www.gov.br/icmbio/pt-br/servicos/servicos-do-icmbio-no-gov.br/compensacao-de-reserva-legal"
           target="_blank"
         >
           <Button danger type="primary" style={styleButton}>
-            Licenciamento por ano
+            Compesação de reserva Legal
           </Button>
         </a>
         <a
-          href="https://www.gov.br/ibama/pt-br/servicos/registros/flora-e-madeira/registro-de-produtos-preservativos-de-madeiras#procedimentos"
+          href="https://app.powerbi.com/view?r=eyJrIjoiZjQ5OTE1NzctMzlhZC00M2FiLTllYjktYjdlMjlkNzZlMjgxIiwidCI6ImMxNGUyYjU2LWM1YmMtNDNiZC1hZDljLTQwOGNmNmNjMzU2MCJ9&pageName=ReportSection"
           target="_blank"
         >
           <Button type="primary" style={styleButton}>
-            Certificados
+            Programa intergridade ICMbio
           </Button>
         </a>
         <a
-          href="https://www.gov.br/ibama/pt-br/canais_atendimento/fale-conosco"
+          href="https://www.gov.br/icmbio/pt-br/servicos/servicos-do-icmbio-no-gov.br/crie-sua-rppn"
           target="_blank"
         >
           <Button type="primary" style={styleButton}>
-            Contatos
+            Criação de RPPN
           </Button>
         </a>
       </Flex>
