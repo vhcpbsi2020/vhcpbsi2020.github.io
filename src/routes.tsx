@@ -7,6 +7,7 @@ import PageMapa from "./pages/mapas";
 import PageIbama from "./pages/ibama";
 import PageIcmbio from "./pages/icmbio";
 import PageQuemSomos from "./pages/Quem Somos";
+import '../src/index.css'
 
 function MainRoutes(){
     return(
