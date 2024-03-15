@@ -1,0 +1,9 @@
+.div-topo-icmbio{
+    background-image: url("https://th.bing.com/th/id/R.61699520a2a1a5d13a7ed49ccf7651dc?rik=caTAzANj51owcA&riu=http%3a%2f%2fadmin.folhadirigida.com.br%2ffilemanager%2ffiles%2fnoticias%2fFotos-2023%2ficmbio-2023-brigadista.jpg&ehk=YswfVfrET521S47Alkut1igsSbuM5Px7JORW9i9dQfM%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    height: 750px;
+    align-items: center;
+    justify-content: center;
+}

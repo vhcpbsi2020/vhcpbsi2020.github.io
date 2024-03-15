@@ -6,6 +6,7 @@ import PageGrafico from "./pages/graficos";
 import PageMapa from "./pages/mapas";
 import PageIbama from "./pages/ibama";
 import PageIcmbio from "./pages/icmbio";
+import '../src/index.css'
 
 function MainRoutes(){
     return(
