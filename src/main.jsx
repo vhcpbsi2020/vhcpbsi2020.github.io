@@ -33,7 +33,7 @@ const OrgaosSubMenu = () => (
 
 const items = [
   getItem("Home", "1", <HomeOutlined />, "/"),
-  getItem("Acervo Florestal", "2", <BookOutlined />, "/NossaHistoria"),
+  getItem("Acervo Florestal", "2", <BookOutlined />, "/acervo"),
   getItem("Quem somos?", "3", null, "/QuemSomos"),
   getItem("Gráficos", "4", <AreaChartOutlined />, "/graficos"),
   getItem("Mapas", "5", <FlagOutlined />, "/Mapas"),

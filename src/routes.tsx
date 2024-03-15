@@ -6,6 +6,7 @@ import PageGrafico from "./pages/graficos";
 import PageMapa from "./pages/mapas";
 import PageIbama from "./pages/ibama";
 import PageIcmbio from "./pages/icmbio";
+import PageAcervo from "./pages/acervo";
 
 function MainRoutes(){
     return(
@@ -16,6 +17,7 @@ function MainRoutes(){
             <Route path="/mapas" element={<PageMapa/>}> </Route>
             <Route path="/ibama" element={<PageIbama/>}> </Route>
             <Route path="/icmbio" element={<PageIcmbio/>}> </Route>
+            <Route path="/acervo" element={<PageAcervo/>}></Route>
         </Routes>
     )
 }
