@@ -35,30 +35,45 @@ function PageAcervo () {
     return (
        <>
 
-       <div className= 'div-title'style={{textAlign: 'center',  marginTop: 10, fontWeight: 500}}>
-        <h1>Conheça as principais especies exploradas:</h1>
+       <div className= 'div-title'style={{textAlign: 'center',  marginTop: 7, fontWeight: 500}}>
+        <h1>Conheça as Principais Especies Exploradas:</h1>
        </div>
        
-        <Swiper
-            slidesPerView={1}
-            pagination={{clickable: true}}
-            navigation
-            style={{marginBottom: 10}}
-        >
-            {data.map( (item) =>(
-                <SwiperSlide key={item.id} className='flex-container' style={{padding: 40, display: 'flex', flexWrap: 'wrap', gap: 10, justifyContent: 'center'}}>
-                    <a href={item.link} target='_blank'>
+       <Swiper
+    slidesPerView={1}
+    pagination={{ clickable: true }}
+    navigation
+    style={{ marginBottom: 5 }}
+>
+    {data.map((item, index) => (
+        index % 2 === 0 && (
+            <SwiperSlide key={item.id} className='flex-container' style={{ padding: 40, display: 'flex', flexWrap: 'wrap', gap: 7, justifyContent: 'center' }}>
+                <div style={{ display: 'flex', justifyContent: 'center', gap: 7 }}>
+                    <a href={item.link} target='_blank' style={{ display: 'flex', justifyContent: 'center', gap: 10 }}>
                         <img
-                        src={item.image}
-                        alt="Slide"
-                        className="slide-item"
-                        style={{width: 400, height: 300, display: 'block', margin: 'auto' }}
-                    />
+                            src={item.image}
+                            alt="Slide"
+                            className="slide-item"
+                            style={{ width: 400, height: 300, display: 'block', margin: 'auto' }}
+                        />
                     </a>
+                    {data[index + 1] && (
+                        <a href={data[index + 1].link} target='_blank' style={{ display: 'flex', justifyContent: 'center', gap: 7 }}>
+                            <img
+                                src={data[index + 1].image}
+                                alt="Slide"
+                                className="slide-item"
+                                style={{ width: 400, height: 300, display: 'block', margin: 'auto' }}
+                            />
+                        </a>
+                    )}
+                </div>
+            </SwiperSlide>
+        )
+    ))}
+</Swiper>
 
-                </SwiperSlide>
-            ))}
-        </Swiper>
+
        </>
 
     )
