@@ -19,7 +19,7 @@ const options = [
   },
 ];
 
-function PageMapa() {
+function PageEstatisticas() {
   const [periodo, setPeriodo] = useState("agosto20-julho21");
 
   const onChange = (value) => {
@@ -170,8 +170,9 @@ function PageMapa() {
           </h1>
         </div>
         <PageEstrada/>
+  
       </Container>
     </>
   );
 }
-export default PageMapa;
+export default PageEstatisticas;

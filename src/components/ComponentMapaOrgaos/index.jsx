@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Map, TileLayer, Marker, Popup } from "leaflet";
+import { Map, TileLayer, Marker } from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 function MapaOrgaosIbama() {

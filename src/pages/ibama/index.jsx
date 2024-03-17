@@ -2,7 +2,6 @@ import "./style.css";
 import { Button, Divider, Flex } from "antd";
 import { Header, Container, Main } from "./style";
 import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
-import MapaOrgaos from "../../components/ComponentMapaOrgaos";
 import MapaOrgaosIbama from "../../components/ComponentMapaOrgaos";
 
 const styleButton = {
