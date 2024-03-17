@@ -32,11 +32,13 @@ function getItemSub(title, key, sub1, sub2) {
 }
 
 const items = [
-  getItem("Home", "1", "/"),
-  getItem("Acervo Florestal", "2", "/NossaHistoria"),
-  getItem("Quem somos?", "3", "/QuemSomos"),
-  getItem("Estatisticas", "5", "/estatisticas"),
-  getItemSub("Orgãos Fiscais", "6", "/ibama", "/icmbio"),
+  getItem("Home", "1", <HomeOutlined />, "/"),
+  getItem("Acervo Florestal", "2", <BookOutlined />, "/NossaHistoria"),
+  getItem("Quem somos?", "3", null, "/QuemSomos"),
+  getItem("Gráficos", "4", <AreaChartOutlined />, "/graficos"),
+  getItem("Mapas", "5", <FlagOutlined />, "/Mapas"),
+  <OrgaosSubMenu/>
+
 ];
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
