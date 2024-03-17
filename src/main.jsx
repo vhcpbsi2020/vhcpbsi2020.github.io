@@ -35,8 +35,7 @@ const items = [
   getItem("Home", "1", "/"),
   getItem("Acervo Florestal", "2", "/NossaHistoria"),
   getItem("Quem somos?", "3", "/QuemSomos"),
-  getItem("Gráficos", "4", "/graficos"),
-  getItem("Mapas", "5", "/Mapas"),
+  getItem("Estatisticas", "5", "/estatisticas"),
   getItemSub("Orgãos Fiscais", "6", "/ibama", "/icmbio"),
 ];
 
@@ -51,7 +50,7 @@ root.render(
           display: "flex",
           alignItems: "center",
           backgroundColor: "#506635",
-          height: 100,
+          height: 90,
         }}
       >
         <Menu
@@ -68,11 +67,13 @@ root.render(
           }}
         >
           <div className="logo">
-            <img
-              src={logo}
-              alt="logo"
-              style={{ width: 180, marginRight: 30 }}
-            />
+            <Link to={'/'}>
+              <img
+                src={logo}
+                alt="logo"
+                style={{ width: 180, marginRight: 30 }}
+              />
+            </Link>
           </div>
           {items}
         </Menu>
