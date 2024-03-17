@@ -11,7 +11,7 @@ const cardStyle = {
 
 const { Meta } = Card;
 
-function CarrouselFeed({ nome }) {
+function CarrouselFeed(nome) {
   return (
     <>
       <section className="layout-content">
