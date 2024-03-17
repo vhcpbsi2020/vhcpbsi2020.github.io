@@ -12,6 +12,10 @@
   "dependencies": {
     "@ant-design/charts": "^2.0.3",
     "@ant-design/plots": "^2.1.14",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.13",
+    "@mui/material": "^5.15.13",
     "antd": "^5.14.1",
     "gsap": "^3.12.5",
     "ol": "^8.2.0",
