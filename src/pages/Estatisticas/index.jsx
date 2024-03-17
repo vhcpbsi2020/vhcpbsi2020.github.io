@@ -28,6 +28,10 @@ const options = [
   {
     value: "2016-2017",
     label: "2016 a 2017",
+  },
+  {
+    value: "2015-2016",
+    label: "2015 a 2016",
   }
 ];
 
@@ -109,6 +113,17 @@ function PageMapa() {
               }}
             >
               Estado do Pará 2016-2017 <CalendarMonthIcon />
+            </p>
+          ) : periodo == "2015-2016" ? (
+            <p
+              style={{
+                fontSize: 20,
+                fontWeight: 600,
+                textAlign: "center",
+                color: "#506635"
+              }}
+            >
+              Estado do Pará 2015-2016 <CalendarMonthIcon />
             </p>
           ) : (
             <p></p>
@@ -222,6 +237,13 @@ function PageMapa() {
             <>
             <CardEstatistica 
               image="https://imazon.org.br/wp-content/uploads/2019/03/infograficosimex2016-2017.jpg"
+              title={"Mapeamento da exploração no Pará"}
+            />
+            </>
+          ) : periodo == "2015-2016" ? (
+            <>
+            <CardEstatistica
+              image="https://imazon.org.br//wp-content/uploads/2017/11/Infografico-Simex-Par%C3%A1-2015-20161.jpg"
               title={"Mapeamento da exploração no Pará"}
             />
             </>
