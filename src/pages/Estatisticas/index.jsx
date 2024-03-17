@@ -46,8 +46,12 @@ const options = [
     label: "2010 a 2011",
   },
   {
-    value: "2009",
-    label: "2009",
+    value: "2009-2010",
+    label: "2009 a 2010",
+  },
+  {
+    value: "2008",
+    label: "2008",
   }
 ];
 
@@ -174,7 +178,7 @@ function PageMapa() {
             >
               2010-2011 <CalendarMonthIcon />
             </p>
-          ) : periodo == "2009" ? (
+          ) : periodo == "2009-2010" ? (
             <p
               style={{
                 fontSize: 20,
@@ -183,7 +187,18 @@ function PageMapa() {
                 color: "#506635"
               }}
             >
-              2009 <CalendarMonthIcon />
+              2009 a 2010 <CalendarMonthIcon />
+            </p>
+          ) : periodo == "2008" ? (
+            <p
+              style={{
+                fontSize: 20,
+                fontWeight: 600,
+                textAlign: "center",
+                color: "#506635"
+              }}
+            >
+              2008 <CalendarMonthIcon />
             </p>
           ) : (
             <p></p>
@@ -356,6 +371,10 @@ function PageMapa() {
               image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
               title={"Florestal Amazônia Legal (Maio de 2011)"}
             />
+            <CardEstatistica 
+              image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+              title={"Florestal Amazônia Legal (Junho de 2011)"}
+            />
             </>
           ) : periodo == "2010-2011" ? (
             <>
@@ -368,7 +387,7 @@ function PageMapa() {
               title={"Mapeamento da Exploração no Estado do Mato Grosso"}
             />
             </>
-          ) : periodo == "2009" ? (
+          ) : periodo == "2009-2010" ? (
             <>
             <CardEstatistica 
               image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_setembro.jpg"
@@ -381,6 +400,13 @@ function PageMapa() {
             <CardEstatistica 
               image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
               title={"Florestal Amazônia Legal (Maio de 2009)"}
+            />
+            </>
+          ) : periodo == "2008" ? (
+            <>
+            <CardEstatistica 
+              image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+              title={"Florestal Amazônia Legal (Maio de 2008)"}
             />
             </>
           ) : (
