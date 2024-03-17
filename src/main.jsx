@@ -3,45 +3,46 @@ import "./index.css";
 import { BrowserRouter, Link } from "react-router-dom";
 import MainRoutes from "./routes";
 import { Layout, Menu } from "antd";
-import {
-  BookOutlined,
-  HomeOutlined,
-  AreaChartOutlined,
-  FlagOutlined,
-} from "@ant-design/icons";
-import logo from "./assets/logo.png";
+
+import logo from "./assets/NEW_LOGO_OMBA.png";
 
 const { Header, Content, Footer } = Layout;
 
-function getItem(label, key, icon, path) {
+function getItem(label, key, path) {
   return (
-    <Menu.Item key={key} icon={icon}>
+    <Menu.Item key={key}>
       <Link to={path}>{label}</Link>
     </Menu.Item>
   );
 }
-const OrgaosSubMenu = () => (
-  <Menu.SubMenu key="7" title="Orgãos Fiscais" icon={<FlagOutlined />}>
-    <Link to={"/ibama"}>
-    <Menu.Item key="IBAMA">IBAMA</Menu.Item> 
-      </Link>
-      <Link to={"/icmbio"}>
-    <Menu.Item key="ICMBIO">ICMBIO</Menu.Item>
-      </Link>
-  </Menu.SubMenu>
-)
+
+function getItemSub(title, key, sub1, sub2) {
+  return (
+    <Menu.Item key={key}>
+      <Menu.SubMenu title={title}>
+        <Menu.Item style={{backgroundColor: '#506635', fontWeight: 300}}>
+          <Link to={sub1}>IBAMA</Link>
+        </Menu.Item>
+        <Menu.Item style={{backgroundColor: '#506635', fontWeight: 300}}>
+          <Link to={sub2}>ICMBIO</Link>
+        </Menu.Item>
+      </Menu.SubMenu>
+    </Menu.Item>
+  );
+}
 
 const items = [
-  getItem("Home", "1", <HomeOutlined />, "/"),
-  getItem("Acervo Florestal", "2", <BookOutlined />, "/NossaHistoria"),
-  getItem("Quem somos?", "3", null, "/QuemSomos"),
-  getItem("Gráficos", "4", <AreaChartOutlined />, "/graficos"),
-  getItem("Mapas", "5", <FlagOutlined />, "/Mapas"),
-  <OrgaosSubMenu/>
-
+  getItem("Home", "1", "/"),
+  getItem("Acervo Florestal", "2", "/NossaHistoria"),
+  getItem("Quem somos?", "3", "/QuemSomos"),
+  getItem("Gráficos", "4", "/graficos"),
+  getItem("Mapas", "5", "/Mapas"),
+  getItemSub("Orgãos Fiscais", "6", "/ibama", "/icmbio"),
 ];
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
   <BrowserRouter>
     <Layout>
       <Header
@@ -50,11 +51,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           display: "flex",
           alignItems: "center",
           backgroundColor: "#506635",
+          height: 100,
         }}
       >
-        <div className="logo">
-          <img src={logo} alt="logo" style={{ width: 85 }} />
-        </div>
         <Menu
           theme="dark"
           mode="horizontal"
@@ -64,12 +63,23 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             minWidth: 0,
             backgroundColor: "#506635",
             fontWeight: 600,
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
+          <div className="logo">
+            <img
+              src={logo}
+              alt="logo"
+              style={{ width: 180, marginRight: 30 }}
+            />
+          </div>
           {items}
         </Menu>
       </Header>
-      <Content style={{marginTop: 60, display: 'block', justifyContent: 'center'}}>
+      <Content
+        style={{ marginTop: 60, display: "block", justifyContent: "center" }}
+      >
         <MainRoutes />
       </Content>
 
