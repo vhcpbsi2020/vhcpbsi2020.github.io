@@ -17,6 +17,10 @@ const options = [
     value: "agosto19-julho20",
     label: "Agosto 2019 a Julho 2020",
   },
+  {
+    value: "2018-2019",
+    label: "2018 a 2019",
+  },
 ];
 
 function PageMapa() {
@@ -64,6 +68,17 @@ function PageMapa() {
               }}
             >
               Agosto19-Julho20 <CalendarMonthIcon />
+            </p>
+          ) : periodo == "2018-2019" ? (
+            <p
+              style={{
+                fontSize: 20,
+                fontWeight: 600,
+                textAlign: "center",
+                color: "#506635"
+              }}
+            >
+              Estado do Pará 2018-2019 <CalendarMonthIcon />
             </p>
           ) : (
             <p></p>
@@ -158,6 +173,13 @@ function PageMapa() {
                 image="https://imazon.org.br/wp-content/uploads/2021/09/Simex_AP_Agosto2019-Julho2020.png"
                 title={"Mapeamento da exploração no Amapá"}
               />
+            </>
+          ) : periodo == "2018-2019" ? (
+            <>
+            <CardEstatistica
+              image="https://imazon.org.br/wp-content/uploads/2021/05/Infografico_SIMEX_2018_2019_A5-1-1536x1086.jpg"
+              title={"Mapeamento da exploração no Pará"}
+            />
             </>
           ) : (
             <p>..nodata</p>
