@@ -40,6 +40,14 @@ const options = [
   {
     value: "2011-2012",
     label: "2011 a 2012",
+  },
+  {
+    value: "2010-2011",
+    label: "2010 a 2011",
+  },
+  {
+    value: "2009",
+    label: "2009",
   }
 ];
 
@@ -154,6 +162,28 @@ function PageMapa() {
               }}
             >
               2011-2012 <CalendarMonthIcon />
+            </p>
+          ) : periodo == "2010-2011" ? (
+            <p
+              style={{
+                fontSize: 20,
+                fontWeight: 600,
+                textAlign: "center",
+                color: "#506635"
+              }}
+            >
+              2010-2011 <CalendarMonthIcon />
+            </p>
+          ) : periodo == "2009" ? (
+            <p
+              style={{
+                fontSize: 20,
+                fontWeight: 600,
+                textAlign: "center",
+                color: "#506635"
+              }}
+            >
+              2009 <CalendarMonthIcon />
             </p>
           ) : (
             <p></p>
@@ -317,6 +347,40 @@ function PageMapa() {
             <CardEstatistica 
               image="https://imazon.org.br/wp-content/uploads/2014/05/image1-300x248.png"
               title={"Mapeamento da Exploração no Estado do Pará"}
+            />
+            <CardEstatistica 
+              image="https://imazon.org.br//wp-content/uploads/2014/05/sul_amazonia_agosto_2011.jpg"
+              title={"Florestal do Sul do Amazonas (Agosto de 2011 a Janeiro de 2012)"}
+            />
+             <CardEstatistica 
+              image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+              title={"Florestal Amazônia Legal (Maio de 2011)"}
+            />
+            </>
+          ) : periodo == "2010-2011" ? (
+            <>
+            <CardEstatistica 
+              image="https://imazon.org.br/wp-content/uploads/2014/05/boletim_transparencia_manejo_florestal_estado_do_para_2010_e_2011g-300x240.jpg"
+              title={"Mapeamento da Exploração no Estado do Pará"}
+            />
+            <CardEstatistica 
+              image="https://imazon.org.br/wp-content/uploads/2014/05/boletim_transparencia_manejo_florestal_do_mato_grosso_2010_2011g-300x243.png"
+              title={"Mapeamento da Exploração no Estado do Mato Grosso"}
+            />
+            </>
+          ) : periodo == "2009" ? (
+            <>
+            <CardEstatistica 
+              image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_setembro.jpg"
+              title={"Florestal Amazônia Legal (Novembro de 2009)"}
+            />
+            <CardEstatistica 
+              image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+              title={"Florestal Amazônia Legal (Março e Abril de 2009)"}
+            />
+            <CardEstatistica 
+              image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+              title={"Florestal Amazônia Legal (Maio de 2009)"}
             />
             </>
           ) : (
