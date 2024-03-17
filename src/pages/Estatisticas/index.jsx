@@ -74,9 +74,9 @@ function PageMapa() {
             >
               Agosto de 2021 a Julho de 2022 <CalendarMonthIcon />
             </p>
-          ) : periodo == "agosto2020-julho2021" ? (
+          ) : periodo == "agosto20-julho21" ? (
             <p
-                style={{
+              style={{
                 fontSize: 20,
                 fontWeight: 600,
                 textAlign: "center",
@@ -300,7 +300,7 @@ function PageMapa() {
         <Divider />
         <div style={{ marginTop: 20 }}>
           <h1 style={{ fontSize: 'clamp(12px, 4vw, 45px)', fontWeight: 600, textAlign: "center" }}>
-            Mapeamento de estradas na Amazonia Legal
+            Mapeamento de Estradas na Amazonia Legal
           </h1>
         </div>
         <PageEstrada/>
