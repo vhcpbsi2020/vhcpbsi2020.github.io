@@ -36,6 +36,10 @@ const options = [
   {
     value: "2015-2016",
     label: "2015 a 2016",
+  },
+  {
+    value: "2011-2012",
+    label: "2011 a 2012",
   }
 ];
 
@@ -139,6 +143,17 @@ function PageMapa() {
               }}
             >
               Estado do Pará 2015-2016 <CalendarMonthIcon />
+            </p>
+          ) : periodo == "2011-2012" ? (
+            <p
+              style={{
+                fontSize: 20,
+                fontWeight: 600,
+                textAlign: "center",
+                color: "#506635"
+              }}
+            >
+              2011-2012 <CalendarMonthIcon />
             </p>
           ) : (
             <p></p>
@@ -290,6 +305,17 @@ function PageMapa() {
             <>
             <CardEstatistica
               image="https://imazon.org.br//wp-content/uploads/2017/11/Infografico-Simex-Par%C3%A1-2015-20161.jpg"
+              title={"Mapeamento da Exploração no Estado do Pará"}
+            />
+            </>
+          ) : periodo == "2011-2012" ? (
+            <>
+            <CardEstatistica 
+              image="https://imazon.org.br/wp-content/uploads/2014/05/image-300x247.png"
+              title={"Mapeamento da Exploração no Estado do Mato Grosso"}
+            />
+            <CardEstatistica 
+              image="https://imazon.org.br/wp-content/uploads/2014/05/image1-300x248.png"
               title={"Mapeamento da Exploração no Estado do Pará"}
             />
             </>
