@@ -21,6 +21,10 @@ const options = [
     value: "2018-2019",
     label: "2018 a 2019",
   },
+  {
+    value: "2017-2018",
+    label: "2017 a 2018",
+  },
 ];
 
 function PageMapa() {
@@ -79,6 +83,17 @@ function PageMapa() {
               }}
             >
               Estado do Pará 2018-2019 <CalendarMonthIcon />
+            </p>
+          ) : periodo == "2017-2018" ? (
+            <p
+              style={{
+                fontSize: 20,
+                fontWeight: 600,
+                textAlign: "center",
+                color: "#506635"
+              }}
+            >
+              Estado do Pará 2017-2018 <CalendarMonthIcon />
             </p>
           ) : (
             <p></p>
@@ -178,6 +193,13 @@ function PageMapa() {
             <>
             <CardEstatistica
               image="https://imazon.org.br/wp-content/uploads/2021/05/Infografico_SIMEX_2018_2019_A5-1-1536x1086.jpg"
+              title={"Mapeamento da exploração no Pará"}
+            />
+            </>
+          ) : periodo == "2017-2018" ? (
+            <>
+            <CardEstatistica 
+              image="https://imazon.org.br/wp-content/uploads/2020/04/SIMEX_madeira_2017-2018.jpg"
               title={"Mapeamento da exploração no Pará"}
             />
             </>
