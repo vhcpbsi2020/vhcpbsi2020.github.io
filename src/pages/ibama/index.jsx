@@ -1,5 +1,4 @@
 import "./style.css";
-import React from "react";
 import { Button, Flex } from "antd";
 
 const styleButton = {
@@ -23,7 +22,9 @@ function PageIbama() {
         }}
       >
         <div>
-          <h1 style={{ color: "white", fontSize: 50 }}>Serviços: </h1>
+          <h1 style={{ color: "white", fontSize: 50 }}>
+            Serviços: 
+          </h1>
         </div>
 
         <Flex
