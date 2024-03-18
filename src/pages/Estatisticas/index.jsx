@@ -484,16 +484,32 @@ function PageMapa() {
           ) : periodo == "2009-2010" ? (
             <>
               <CardEstatistica 
-                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_setembro.jpg"
-                title={"Amazônia Legal (Novembro de 2009)"}
-              />
-              <CardEstatistica 
                 image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
                 title={"Amazônia Legal (Março e Abril de 2009)"}
               />
               <CardEstatistica 
                 image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
                 title={"Amazônia Legal (Maio de 2009)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Julho de 2009)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Agosto de 2008)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_setembro.jpg"
+                title={"Amazônia Legal (Setembro de 2009)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_setembro.jpg"
+                title={"Amazônia Legal (Outubro de 2009)"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_setembro.jpg"
+                title={"Amazônia Legal (Novembro de 2009)"}
               />
               <CardEstatistica 
                 image="https://imazon.org.br//wp-content/uploads/2014/05/sul_do_amazonas.jpg"
