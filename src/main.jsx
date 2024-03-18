@@ -35,7 +35,7 @@ function getItemSub(title, key, title1, title2, sub1, sub2) {
 const items = [
   getItem("Home", "1", "/"),
   getItem("Acervo Florestal", "2", "/acervo"),
-  getItem("Quem somos?", "3", "/QuemSomos"),
+  getItem("Quem somos?", "3", "/quemsomos"),
   getItem("Estatisticas", "5", "/estatisticas"),
   getItem("Mapas Interativos", "6", "/mapas"),
   getItemSub("Orgãos Fiscais", "4", 'IBAMA', "ICMBIO", "/ibama", "/icmbio"),

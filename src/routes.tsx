@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom"; 
 import Home from "./pages/Home";
-import PageGrafico from "./pages/graficos";
 import PageMapa from "./pages/Mapas";
 import PageIbama from "./pages/ibama";
 import PageIcmbio from "./pages/icmbio";
 import PageEstatisticas from "./pages/Estatisticas";
 import '../src/index.css'
 import PageAcervo from "./pages/acervo";
+import PageQuemSomos from "./pages/QuemSomos";
 
 function MainRoutes(){
     return(
@@ -18,6 +18,7 @@ function MainRoutes(){
             <Route path="/ibama" element={<PageIbama/>}> </Route>
             <Route path="/icmbio" element={<PageIcmbio/>}> </Route>
             <Route path="/mapas" element={<PageMapa/>}></Route>
+            <Route path="/quemsomos" element={<PageQuemSomos/>}></Route>
         </Routes>
     )
 }
