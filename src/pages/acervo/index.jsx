@@ -12,8 +12,8 @@ import {Swiper, SwiperSlide} from 'swiper/react'
 function PageAcervo () {
 
     const data = [
-        {id: '1', image: 'src/pages/acervo/Texto do seu parágrafo/1.png', link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=51",text: "ANDIROBA"  },
-        {id: '2', image: 'src/pages/acervo/Texto do seu parágrafo/2.png', link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=92",text: "UXI" },
+        {id: '1', image: 'src/pages/acervo/Texto do seu parágrafo/1.png', link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=51"  },
+        {id: '2', image: 'src/pages/acervo/Texto do seu parágrafo/2.png', link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=92" },
         {id: '3', image: 'src/pages/acervo/Texto do seu parágrafo/3.png', link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=89" },
         {id: '4', image: 'src/pages/acervo/Texto do seu parágrafo/4.png', link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=116" },
         {id: '5', image: 'src/pages/acervo/Texto do seu parágrafo/5.png', link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=245" },
@@ -51,15 +51,13 @@ function PageAcervo () {
                 <div style={{ display: 'flex', justifyContent: 'center', gap: 7 }}>
                     <a href={item.link} target='_blank' style={{ display: 'flex', justifyContent: 'center', gap: 10 }}>
                         <img
-                            src={item.image}
+                            src={data[index].image}
                             alt="Slide"
                             className="slide-item"
                             style={{ width: 400, height: 300, display: 'block', margin: 'auto' }}
                         />
                     </a>
-                     {/* Text below image */}
-                     <p>{item.text}</p>
-
+                    
                     {data[index + 1] && (
                         <a href={data[index + 1].link} target='_blank' style={{ display: 'flex', justifyContent: 'center', gap: 7 }}>
                             <img
