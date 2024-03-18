@@ -74,7 +74,7 @@ function PageMapa() {
     <>
       <Header>
         <div className="entrance-animation">
-          <h1>
+          <h1 style={{display: 'flex', alignItems: 'center'}}>
             CENTRAL DE ESTATISTICAS
             <AlignVerticalBottomIcon style={{ fontSize: 120 }} />
           </h1>
@@ -640,6 +640,7 @@ function PageMapa() {
           </h1>
         </div>
         <PageEstrada/>
+  
       </Container>
     </>
   );

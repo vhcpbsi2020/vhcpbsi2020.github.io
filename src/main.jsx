@@ -16,27 +16,29 @@ function getItem(label, key, path) {
   );
 }
 
-function getItemSub(title, key, sub1, sub2) {
+function getItemSub(title, key, title1, title2, sub1, sub2) {
   return (
     <Menu.Item key={key}>
-      <Menu.SubMenu title={title}>
-        <Menu.Item style={{backgroundColor: '#506635', fontWeight: 300}}>
-          <Link to={sub1}>IBAMA</Link>
+      <Menu.SubMenu title={title} key={`${title}-submenu`}>
+        <Menu.Item key={`${title}-submenu`} style={{backgroundColor: '#506635', fontWeight: 300}}>
+          <Link to={sub1}>{title1}</Link>
         </Menu.Item>
-        <Menu.Item style={{backgroundColor: '#506635', fontWeight: 300}}>
-          <Link to={sub2}>ICMBIO</Link>
+        <Menu.Item key={`${title}-submenu`} style={{backgroundColor: '#506635', fontWeight: 300}}>
+          <Link to={sub2}>{title2}</Link>
         </Menu.Item>
       </Menu.SubMenu>
     </Menu.Item>
   );
 }
 
+
 const items = [
   getItem("Home", "1", "/"),
-  getItem("Acervo Florestal", "2", "/NossaHistoria"),
+  getItem("Acervo Florestal", "2", "/acervo"),
   getItem("Quem somos?", "3", "/QuemSomos"),
   getItem("Estatisticas", "5", "/estatisticas"),
-  getItemSub("Orgãos Fiscais", "6", "/ibama", "/icmbio"),
+  getItem("Mapas Interativos", "6", "/mapas"),
+  getItemSub("Orgãos Fiscais", "4", 'IBAMA', "ICMBIO", "/ibama", "/icmbio"),
 ];
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
