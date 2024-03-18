@@ -4,7 +4,7 @@ import AlignVerticalBottomIcon from "@mui/icons-material/AlignVerticalBottom";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 import CardEstatistica from "../../components/cardsEstatisticas";
-import { Cascader, Divider } from "antd";
+import { Card, Cascader, Divider } from "antd";
 import { useState } from "react";
 import PageEstrada from "../../components/cardsEstatisticas/PageEstrada";
 
@@ -52,6 +52,14 @@ const options = [
   {
     value: "2008",
     label: "2008",
+  },
+  {
+    value:"2007",
+    label: "2007",
+  },
+  {
+    value:"2006",
+    label: "2006",
   }
 ];
 
@@ -200,6 +208,28 @@ function PageMapa() {
             >
               2008 <CalendarMonthIcon />
             </p>
+          ) : periodo == "2007" ? (
+            <p
+              style={{
+                fontSize: 20,
+                fontWeight: 600,
+                textAlign: "center",
+                color: "#506635"
+              }} 
+            >
+              2007 <CalendarMonthIcon />
+            </p>
+          ) : periodo == "2006" ? (
+            <p
+              style={{
+                fontSize: 20,
+                fontWeight: 600,
+                textAlign: "center",
+                color: "#506635"
+              }} 
+            >
+              2006 <CalendarMonthIcon />
+            </p>
           ) : (
             <p></p>
           )}
@@ -327,87 +357,217 @@ function PageMapa() {
             </>
           ) : periodo == "2018-2019" ? (
             <>
-            <CardEstatistica
-              image="https://imazon.org.br/wp-content/uploads/2021/05/Infografico_SIMEX_2018_2019_A5-1-1536x1086.jpg"
-              title={"Mapeamento da Exploração no Estado do Pará"}
-            />
+              <CardEstatistica
+                image="https://imazon.org.br/wp-content/uploads/2021/05/Infografico_SIMEX_2018_2019_A5-1-1536x1086.jpg"
+                title={"Mapeamento da Exploração no Estado do Pará"}
+              />
             </>
           ) : periodo == "2017-2018" ? (
             <>
-            <CardEstatistica 
-              image="https://imazon.org.br/wp-content/uploads/2020/04/SIMEX_madeira_2017-2018.jpg"
-              title={"Mapeamento da Exploração no Estado do Pará"}
-            />
+              <CardEstatistica 
+                image="https://imazon.org.br/wp-content/uploads/2020/04/SIMEX_madeira_2017-2018.jpg"
+                title={"Mapeamento da Exploração no Estado do Pará"}
+              />
             </>
           ) : periodo == "2016-2017" ? (
             <>
-            <CardEstatistica 
-              image="https://imazon.org.br/wp-content/uploads/2019/03/infograficosimex2016-2017.jpg"
-              title={"Mapeamento da Exploração no Estado do Pará"}
-            />
+              <CardEstatistica 
+                image="https://imazon.org.br/wp-content/uploads/2019/03/infograficosimex2016-2017.jpg"
+                title={"Mapeamento da Exploração no Estado do Pará"}
+              />
             </>
           ) : periodo == "2015-2016" ? (
             <>
-            <CardEstatistica
-              image="https://imazon.org.br//wp-content/uploads/2017/11/Infografico-Simex-Par%C3%A1-2015-20161.jpg"
-              title={"Mapeamento da Exploração no Estado do Pará"}
-            />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2017/11/Infografico-Simex-Par%C3%A1-2015-20161.jpg"
+                title={"Mapeamento da Exploração no Estado do Pará"}
+              />
             </>
           ) : periodo == "2011-2012" ? (
             <>
-            <CardEstatistica 
-              image="https://imazon.org.br/wp-content/uploads/2014/05/image-300x247.png"
-              title={"Mapeamento da Exploração no Estado do Mato Grosso"}
-            />
-            <CardEstatistica 
-              image="https://imazon.org.br/wp-content/uploads/2014/05/image1-300x248.png"
-              title={"Mapeamento da Exploração no Estado do Pará"}
-            />
-            <CardEstatistica 
-              image="https://imazon.org.br//wp-content/uploads/2014/05/sul_amazonia_agosto_2011.jpg"
-              title={"Florestal do Sul do Amazonas (Agosto de 2011 a Janeiro de 2012)"}
-            />
-             <CardEstatistica 
-              image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
-              title={"Florestal Amazônia Legal (Maio de 2011)"}
-            />
-            <CardEstatistica 
-              image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
-              title={"Florestal Amazônia Legal (Junho de 2011)"}
-            />
+              <CardEstatistica 
+                image="https://imazon.org.br/wp-content/uploads/2014/05/image-300x247.png"
+                title={"Mapeamento da Exploração no Estado do Mato Grosso"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br/wp-content/uploads/2014/05/image1-300x248.png"
+                title={"Mapeamento da Exploração no Estado do Pará"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/sul_amazonia_agosto_2011.jpg"
+                title={"Sul do Amazonas (Agosto de 2011 a Janeiro de 2012)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Março de 2011)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_abril_2011.jpg"
+                title={"Amazônia Legal (Abril de 2011)"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Maio de 2011)"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Junho de 2011)"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Julho de 2011)"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Agosto de 2011)"}
+              />
             </>
           ) : periodo == "2010-2011" ? (
             <>
-            <CardEstatistica 
-              image="https://imazon.org.br/wp-content/uploads/2014/05/boletim_transparencia_manejo_florestal_estado_do_para_2010_e_2011g-300x240.jpg"
-              title={"Mapeamento da Exploração no Estado do Pará"}
-            />
-            <CardEstatistica 
-              image="https://imazon.org.br/wp-content/uploads/2014/05/boletim_transparencia_manejo_florestal_do_mato_grosso_2010_2011g-300x243.png"
-              title={"Mapeamento da Exploração no Estado do Mato Grosso"}
-            />
+              <CardEstatistica 
+                image="https://imazon.org.br/wp-content/uploads/2014/05/boletim_transparencia_manejo_florestal_estado_do_para_2010_e_2011g-300x240.jpg"
+                title={"Mapeamento da Exploração no Estado do Pará"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br/wp-content/uploads/2014/05/boletim_transparencia_manejo_florestal_do_mato_grosso_2010_2011g-300x243.png"
+                title={"Mapeamento da Exploração no Estado do Mato Grosso"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br/wp-content/uploads/2014/05/apa_do_xingu_2007-1.jpg"
+                title={"APA Triunfo do Xingu (Agosto de 2010 a Julho de 2011)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/sul_do_amazonas_julho.png"
+                title={"Sul do Amazonas (Agosto 2010 – Julho 2011)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Dezembro de 2009 a Janeiro de 2010)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_outubro_2008.png"
+                title={"Amazônia Legal (Fevereiro de 2010)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_outubro_2008.png"
+                title={"Amazônia Legal (Março de 2010)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Abril e Maio de 2010)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Junho de 2010)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Julho de 2010)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Agosto de 2011)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Setembro de 2010)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Outubro de 2010)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Novembro de 2010)"}
+              />
             </>
           ) : periodo == "2009-2010" ? (
             <>
-            <CardEstatistica 
-              image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_setembro.jpg"
-              title={"Florestal Amazônia Legal (Novembro de 2009)"}
-            />
-            <CardEstatistica 
-              image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
-              title={"Florestal Amazônia Legal (Março e Abril de 2009)"}
-            />
-            <CardEstatistica 
-              image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
-              title={"Florestal Amazônia Legal (Maio de 2009)"}
-            />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_setembro.jpg"
+                title={"Amazônia Legal (Novembro de 2009)"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Março e Abril de 2009)"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Maio de 2009)"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/sul_do_amazonas.jpg"
+                title={"Sul do Amazonas (Agosto 2009 – Julho 2010)"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/para_2009_2010-300x246.png"
+                title={"Estado do Pará (2009 e 2010)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/mato_grosso-300x235.jpg"
+                title={"Estado do Mato Grosso (Agosto de 2009 a Julho de 2010)"}
+              />
             </>
           ) : periodo == "2008" ? (
             <>
-            <CardEstatistica 
-              image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
-              title={"Florestal Amazônia Legal (Maio de 2008)"}
-            />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Maio de 2008)"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/florestal_agosto.jpg"
+                title={"Estado do Mato Grosso (Agosto de 2008)"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/matogrosso_abril_2008.jpg"
+                title={"Estado do Mato Grosso (Abril de 2008)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/para_novembro.jpg"
+                title={"Estado do Pará (Março de 2008)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/boletim_transparencia_manejo_florestal_estado_do_para_2008_e_2009g-300x231.jpg"
+                title={"Estado do Pará (2008 e 2009)"}
+              />
+            </>
+          ) : periodo == "2007" ? (
+            <>
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/matogrosso_novembro_dezembro.jpg"
+                title={"Estado de Mato Grosso (Novembro e Dezembro de 2007)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/boletim_trans_florestal_ago_2007.jpg"
+                title={"Estado do Pará (Agosto de 2007)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/para_setembro_2008.jpg"
+                title={"Estado do Pará (Setembro e Outubro de 2007)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/para_novembro.jpg"
+                title={"Estado do Pará (Novembro e Dezembro de 2007)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br/wp-content/uploads/2014/05/apa_do_xingu_2007.jpg"
+                title={"APA Triunfo do Xingu (2007, 2008 e 2009)"}
+              />
+            </>
+          ) : periodo == "2006" ? (
+            <>
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/matogrosso_outubro_2006.jpg"
+                title={"Estado de Mato Grosso (Outubro de 2006)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br/wp-content/uploads/2014/05/boletim_transparencia_manejo_florestal_estado_do_mato_grosso_2006_a_2009g-300x213.jpg"
+                title={"Estado do Mato Grosso (2006 a 2009)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/sul_do_amazonas.jpg"
+                title={"Sul do Amazonas (2006-2009)"}
+              />
             </>
           ) : (
             <p>..nodata</p>
