@@ -25,5 +25,5 @@ export const Container = styled.div`
 
 
 export const Main = styled.div`
-  /* grid-area: Main; */
+  height: 1200px;
 `;
