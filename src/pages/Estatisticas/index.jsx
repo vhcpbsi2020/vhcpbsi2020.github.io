@@ -483,6 +483,14 @@ function PageMapa() {
             </>
           ) : periodo == "2009-2010" ? (
             <>
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Janeiro 2009)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Fevereiro 2009)"}
+              />
               <CardEstatistica 
                 image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
                 title={"Amazônia Legal (Março e Abril de 2009)"}
@@ -490,6 +498,10 @@ function PageMapa() {
               <CardEstatistica 
                 image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
                 title={"Amazônia Legal (Maio de 2009)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Junho de 2008)"}
               />
               <CardEstatistica
                 image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
@@ -527,16 +539,12 @@ function PageMapa() {
           ) : periodo == "2008" ? (
             <>
               <CardEstatistica 
-                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
-                title={"Amazônia Legal (Maio de 2008)"}
+                image="https://imazon.org.br//wp-content/uploads/2014/05/matogrosso_abril_2008.jpg"
+                title={"Estado do Mato Grosso (Abril de 2008)"}
               />
               <CardEstatistica 
                 image="https://imazon.org.br//wp-content/uploads/2014/05/florestal_agosto.jpg"
                 title={"Estado do Mato Grosso (Agosto de 2008)"}
-              />
-              <CardEstatistica 
-                image="https://imazon.org.br//wp-content/uploads/2014/05/matogrosso_abril_2008.jpg"
-                title={"Estado do Mato Grosso (Abril de 2008)"}
               />
               <CardEstatistica
                 image="https://imazon.org.br//wp-content/uploads/2014/05/para_novembro.jpg"
@@ -545,6 +553,38 @@ function PageMapa() {
               <CardEstatistica
                 image="https://imazon.org.br//wp-content/uploads/2014/05/boletim_transparencia_manejo_florestal_estado_do_para_2008_e_2009g-300x231.jpg"
                 title={"Estado do Pará (2008 e 2009)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/transparencia_florestal_amazonia.jpg"
+                title={"Amazônia Legal (Abril de 2008)"}
+              />
+              <CardEstatistica 
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Maio de 2008)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Junho de 2008)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Julho de 2008)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Agosto de 2008)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Setembro de 2008)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Outubro de 2008)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br//wp-content/uploads/2014/05/amazonia_legal_maio_2008.png"
+                title={"Amazônia Legal (Novembro e Dezembro de 2008)"}
               />
             </>
           ) : periodo == "2007" ? (
@@ -568,6 +608,10 @@ function PageMapa() {
               <CardEstatistica
                 image="https://imazon.org.br/wp-content/uploads/2014/05/apa_do_xingu_2007.jpg"
                 title={"APA Triunfo do Xingu (2007, 2008 e 2009)"}
+              />
+              <CardEstatistica
+                image="https://imazon.org.br/wp-content/uploads/2014/05/para_2007_2008-300x289.png"
+                title={"Estado do Pará (2007 e 2008)"}
               />
             </>
           ) : periodo == "2006" ? (
