@@ -1,5 +1,5 @@
 import "./style.css";
-import { Header, Container, Left, Rigth, Main } from "./style";
+import { Header, Container, Main } from "./style";
 import NoticasCard from "../../components/cardsNoticias";
 import { Carousel } from "antd";
 
@@ -16,7 +16,6 @@ function Home() {
       </Header>
 
       <Container>
-        
         <Main>
           <section>
             <Carousel
@@ -98,7 +97,9 @@ function Home() {
                   }}
                 >
                   <NoticasCard
-                  url={'https://saibajanews.com.br/brasil/petrobras/2024/03/15/petrobras-e-consorcio-amazonia-legal-formarao-grupo-de-trabalho-com-foco-em-acoes-de-sustentabilidade-na-margem-equatorial/'}
+                    url={
+                      "https://saibajanews.com.br/brasil/petrobras/2024/03/15/petrobras-e-consorcio-amazonia-legal-formarao-grupo-de-trabalho-com-foco-em-acoes-de-sustentabilidade-na-margem-equatorial/"
+                    }
                     imagem={
                       "https://saibajanews.com.br/wp-content/uploads/2024/03/Jean-Paul-no-Maranhao-860x846.webp"
                     }
@@ -110,7 +111,9 @@ function Home() {
                     }
                   />
                   <NoticasCard
-                  url={'https://www.camara.leg.br/noticias/1014609-camara-aprova-projeto-que-facilita-regularizacao-de-terras-na-amazonia-legal/'}
+                    url={
+                      "https://www.camara.leg.br/noticias/1014609-camara-aprova-projeto-que-facilita-regularizacao-de-terras-na-amazonia-legal/"
+                    }
                     imagem={
                       "https://www.camara.leg.br/midias/image/2023/11/img20231107213704048-768x473.jpg"
                     }
@@ -119,12 +122,12 @@ function Home() {
                     }
                     description={
                       "Proposta retorna ao Senado para nova votação."
-
-            
                     }
                   />
                   <NoticasCard
-                  url={'https://www.cnnbrasil.com.br/nacional/policiais-da-amazonia-tem-de-patrulhar-area-quatro-vezes-maior-que-profissionais-do-resto-do-pais/'}
+                    url={
+                      "https://www.cnnbrasil.com.br/nacional/policiais-da-amazonia-tem-de-patrulhar-area-quatro-vezes-maior-que-profissionais-do-resto-do-pais/"
+                    }
                     imagem={
                       "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/06/WhatsApp-Image-2022-06-07-at-14.06.00.jpeg?w=1220&h=674&crop=1"
                     }
@@ -136,7 +139,9 @@ function Home() {
                     }
                   />
                   <NoticasCard
-                  url={'https://www.cnnbrasil.com.br/nacional/startup-ambiental-brasileira-promete-restaurar-um-milhao-de-hectares-de-florestas/'}
+                    url={
+                      "https://www.cnnbrasil.com.br/nacional/startup-ambiental-brasileira-promete-restaurar-um-milhao-de-hectares-de-florestas/"
+                    }
                     imagem={
                       "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/03/floresta-amazonica-brasil.jpg?w=1220&h=674&crop=1"
                     }
