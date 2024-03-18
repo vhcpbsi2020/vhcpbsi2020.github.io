@@ -34,7 +34,7 @@ function getItemSub(title, key, title1, title2, sub1, sub2) {
 
 const items = [
   getItem("Home", "1", "/"),
-  getItem("Acervo Florestal", "2", "/NossaHistoria"),
+  getItem("Acervo Florestal", "2", "/acervo"),
   getItem("Quem somos?", "3", "/QuemSomos"),
   getItem("Estatisticas", "5", "/estatisticas"),
   getItem("Mapas Interativos", "6", "/mapas"),
