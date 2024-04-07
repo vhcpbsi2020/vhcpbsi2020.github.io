@@ -1,7 +1,6 @@
 import "./style.css";
-import { Header, Container, Main } from "./style";
+import { Header, Container, Main, StyledCarousel, StyledH1Title } from "./style";
 import NoticasCard from "../../components/cardsNoticias";
-import { Carousel } from "antd";
 
 function Home() {
   return (
@@ -16,20 +15,17 @@ function Home() {
       </Header>
 
       <Container>
+        <StyledH1Title style={{  }}>
+          Ultimas Noticias
+        </StyledH1Title>
         <Main>
-          <section >
-            <Carousel
+          <section>
+            <StyledCarousel
+              className="mt-4 h-full pb-6 pt-0 br-0"
               autoplay
-              style={{ height: '100%', borderRadius: 20, paddingTop: 20 }}
             >
               <section>
-                <div
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    justifyContent: "space-around",
-                  }}
-                >
+                <div className="grid flex-wrap sm:grid-cols-1 md:grid-cols-4 gap-2">
                   <NoticasCard
                     imagem={
                       "https://www.rbsdirect.com.br/filestore/2/4/5/1/3/9/4_acd9deeffac3871/4931542_bcccdda05a9fce0.jpg?w=800&h=535"
@@ -89,13 +85,7 @@ function Home() {
               </section>
 
               <section>
-                <div
-                  style={{
-                    display: "flex",
-                    flexWrap: "wrap",
-                    justifyContent: "space-around",
-                  }}
-                >
+                <div className="grid flex-wrap sm:grid-cols-1 md:grid-cols-4 gap-2">
                   <NoticasCard
                     url={
                       "https://saibajanews.com.br/brasil/petrobras/2024/03/15/petrobras-e-consorcio-amazonia-legal-formarao-grupo-de-trabalho-com-foco-em-acoes-de-sustentabilidade-na-margem-equatorial/"
@@ -154,7 +144,7 @@ function Home() {
                   />
                 </div>
               </section>
-            </Carousel>
+            </StyledCarousel>
           </section>
         </Main>
       </Container>
