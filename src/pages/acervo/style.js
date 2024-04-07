@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const Header = styled.div`
   grid-area: Header;
-  background-image: url("https://amazoniareal.com.br/wp-content/uploads/2023/01/MADEIRA-ILEGAL-DESMATAMENTO-AMAZONIA-FOTO-GREENPEACE-3a-e1672695537381.jpg");
+  background-image: url("https://farm66.staticflickr.com/65535/48746483611_2181c3850d_o.jpg");
   background-size: cover;
-  background-position: 30% 40%;
+  background-position: 30% 100%;
   width: 100%;
   height: 500px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -16,7 +16,6 @@ export const Header = styled.div`
 export const Container = styled.div`
   margin: 30px;
   gap: 0px 0px;
-  height: 100%;
   grid-template-areas:
     "Header Header Header"
     "Left Main Rigth"

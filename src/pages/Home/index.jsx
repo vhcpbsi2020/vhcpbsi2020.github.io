@@ -17,10 +17,10 @@ function Home() {
 
       <Container>
         <Main>
-          <section>
+          <section >
             <Carousel
               autoplay
-              style={{ height: 490, borderRadius: 20, paddingTop: 20 }}
+              style={{ height: '100%', borderRadius: 20, paddingTop: 20 }}
             >
               <section>
                 <div

@@ -23,6 +23,7 @@ function PageMapas() {
               textAlign: "center",
             }}
           >
+              <Divider style={{ backgroundColor: "#b6b6b6" }} />
             Mapa da Evolução do Desmatamento nos Municípios
           </h1>
         </div>
@@ -32,7 +33,7 @@ function PageMapas() {
             src="https://datazoom.shinyapps.io/app_map_dz_munic_prodes/_w_58fb8387/?x=desmatado&filter=2015"
             title="conteudo externo"
             width="100%"
-            height="400"
+            height="700"
           ></iframe>
         </Main>
       </Container>
@@ -46,16 +47,17 @@ function PageMapas() {
               textAlign: "center",
             }}
           >
-            Mapa da Evolução do Desmatamento nos Municípios
+             <Divider style={{ backgroundColor: "#b6b6b6" }} />
+            Ranking da Exportação de Produtos Específicos por Município da Amazônia Legal
           </h1>
         </div>
-        <Divider />
+       
         <Main>
           <iframe
-            src="https://datazoom.shinyapps.io/app_map_dz_munic_prodes/_w_58fb8387/?x=desmatado&filter=2015"
+            src="https://datazoom.shinyapps.io/app_rk_comex_exp_munic_produtosamz/"
             title="conteudo externo"
             width="100%"
-            height="400"
+            height="900"
           ></iframe>
         </Main>
       </Container>

@@ -1,3 +1,22 @@
+@keyframes slide-in {
+    0% {
+      right: -100%;
+    }
+    100% {
+      right: 0; /* Termina no local original */
+    }
+  }
+  
+  .entrance-animation {
+    position: absolute;
+    right: -100%; /* Começa fora da tela à direita */
+    animation: slide-in 2s forwards;
+    color: white;
+    font-size: clamp(12px, 4vw, 40px);
+    font-weight: 600;
+    margin-right: 50px;
+  }
+
 .div-title{
     font-size: clamp(9px, 4vw, 40px);
     margin: 0;
