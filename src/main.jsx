@@ -3,33 +3,46 @@ import "./index.css";
 import { BrowserRouter, Link } from "react-router-dom";
 import MainRoutes from "./routes";
 import { Layout, Menu } from "antd";
-import {
-  BookOutlined,
-  HomeOutlined,
-  AreaChartOutlined,
-  FlagOutlined,
-} from "@ant-design/icons";
-import logo from "./assets/logo.png";
+
+import logo from "./assets/NEW_LOGO_OMBA.png";
 
 const { Header, Content, Footer } = Layout;
 
-function getItem(label, key, icon, path) {
+function getItem(label, key, path) {
   return (
-    <Menu.Item key={key} icon={icon}>
+    <Menu.Item key={key}>
       <Link to={path}>{label}</Link>
     </Menu.Item>
   );
 }
 
+function getItemSub(title, key, title1, title2, sub1, sub2) {
+  return (
+    <Menu.Item key={key}>
+      <Menu.SubMenu title={title} key={`${title}-submenu`}>
+        <Menu.Item key={`${title}-submenu`} style={{backgroundColor: '#506635', fontWeight: 300}}>
+          <Link to={sub1}>{title1}</Link>
+        </Menu.Item>
+        <Menu.Item key={`${title}-submenu`} style={{backgroundColor: '#506635', fontWeight: 300}}>
+          <Link to={sub2}>{title2}</Link>
+        </Menu.Item>
+      </Menu.SubMenu>
+    </Menu.Item>
+  );
+}
+
+
 const items = [
-  getItem("Home", "1", <HomeOutlined />, "/"),
-  getItem("Acervo Florestal", "2", <BookOutlined />, "/NossaHistoria"),
-  getItem("Quem somos?", "3", null, "/QuemSomos"),
-  getItem("Gráficos", "4", <AreaChartOutlined />, "/graficos"),
-  getItem("Mapas", "5", <FlagOutlined />, "/Mapas"),
+  getItem("Home", "1", "/"),
+  getItem("Acervo Florestal", "2", "/acervo"),
+  getItem("Estatisticas", "5", "/estatisticas"),
+  getItem("Mapas Interativos", "6", "/mapas"),
+  getItemSub("Orgãos Fiscais", "4", 'IBAMA', "ICMBIO", "/ibama", "/icmbio"),
 ];
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
   <BrowserRouter>
     <Layout>
       <Header
@@ -38,11 +51,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           display: "flex",
           alignItems: "center",
           backgroundColor: "#506635",
+          height: 90,
         }}
       >
-        <div className="logo">
-          <img src={logo} alt="logo" style={{ width: 85 }} />
-        </div>
         <Menu
           theme="dark"
           mode="horizontal"
@@ -52,12 +63,25 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             minWidth: 0,
             backgroundColor: "#506635",
             fontWeight: 600,
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
+          <div className="logo">
+            <Link to={'/'}>
+              <img
+                src={logo}
+                alt="logo"
+                style={{ width: 180, marginRight: 30 }}
+              />
+            </Link>
+          </div>
           {items}
         </Menu>
       </Header>
-      <Content style={{marginTop: 60, display: 'block', justifyContent: 'center'}}>
+      <Content
+        style={{ marginTop: 60, display: "block", justifyContent: "center" }}
+      >
         <MainRoutes />
       </Content>
 
@@ -69,28 +93,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           fontWeight: "400",
         }}
       >
-        <div>
-          <h3>Endereço: </h3>
-          <p>
-            Rua Exemplo, 123<br></br>Cidade, Estado, CEP
-          </p>
-        </div>
-        <div>
-          <h3>Contato:</h3>
-          <p>
-            Email: exemplo@dominio.com<br></br>Telefone: (00) 12345-6789
-          </p>
-        </div>
-        <div>
-          <h3>Redes Sociais</h3>
-          <p>
-            <a href="https://www.facebook.com/exemplo">Facebook</a>
-            <br></br>
-            <a href="https://www.twitter.com/exemplo">Twitter</a>
-            <br></br>
-            <a href="https://www.instagram.com/exemplo">Instagram</a>
-          </p>
-        </div>
+       
         <p>© 2024 OMBA. Todos os direitos reservados.</p>
       </Footer>
     </Layout>
