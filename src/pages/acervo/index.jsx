@@ -5,11 +5,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Header, Container, Main } from "./style";
-import ArchiveIcon from '@mui/icons-material/Archive';
+import ArchiveIcon from "@mui/icons-material/Archive";
 
 import "./style.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { StyledH1Title } from "../Home/style";
 
 function PageAcervo() {
   const data = [
@@ -99,20 +100,24 @@ function PageAcervo() {
     <>
       <Header>
         <div className="entrance-animation">
-        <h1 style={{ display: "flex", alignItems: "center" }}>
+          <div>
             Acervo Florestal
             <ArchiveIcon style={{ fontSize: 120 }} />
-            </h1>
+          </div>
         </div>
       </Header>
       <Container>
+
+      <div>
+        <StyledH1Title>O que é?</StyledH1Title>
+        <p style={{textAlign: 'justify', fontWeight:200 }}>Na região do Baixo Amazonas, um acervo florestal é de extrema importância. Esta região é conhecida pela sua rica biodiversidade e pelos seus vastos recursos florestais. O acervo florestal ajuda a documentar e preservar este patrimônio natural, fornecendo informações valiosas para pesquisadores, conservacionistas e tomadores de decisão.
+
+Além disso, o acervo florestal desempenha um papel crucial na promoção do manejo florestal sustentável. Ao fornecer informações detalhadas sobre as espécies de madeira exploradas na região, ele pode ajudar a garantir que a exploração madeireira seja realizada de uma maneira que preserve a saúde e a vitalidade das florestas para as gerações futuras.</p>
+      </div>
+
+
         <Main>
-          <div
-            className="div-title"
-            style={{ textAlign: "center", marginTop: 50, fontWeight: 500 }}
-          >
-            <h1>Conheça as Principais Especies Exploradas:</h1>
-          </div>
+          <StyledH1Title>Principais Especies Exploradas</StyledH1Title>
 
           <Swiper
             slidesPerView={1}
