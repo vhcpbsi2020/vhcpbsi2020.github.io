@@ -146,6 +146,7 @@ function Home() {
               </section>
             </StyledCarousel>
           </section>
+          
         </Main>
       </Container>
     </>

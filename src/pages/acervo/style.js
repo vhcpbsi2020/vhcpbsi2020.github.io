@@ -24,6 +24,7 @@ export const Container = styled.div`
 
 
 
+
 export const Main = styled.div`
   height: 1200px;
 `;

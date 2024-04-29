@@ -35,7 +35,6 @@ function getItemSub(title, key, title1, title2, sub1, sub2) {
 const items = [
   getItem("Home", "1", "/"),
   getItem("Acervo Florestal", "2", "/acervo"),
-  getItem("Quem somos?", "3", "/QuemSomos"),
   getItem("Estatisticas", "5", "/estatisticas"),
   getItem("Mapas Interativos", "6", "/mapas"),
   getItemSub("Orgãos Fiscais", "4", 'IBAMA', "ICMBIO", "/ibama", "/icmbio"),
@@ -94,28 +93,7 @@ root.render(
           fontWeight: "400",
         }}
       >
-        <div>
-          <h3>Endereço: </h3>
-          <p>
-            Rua Exemplo, 123<br></br>Cidade, Estado, CEP
-          </p>
-        </div>
-        <div>
-          <h3>Contato:</h3>
-          <p>
-            Email: exemplo@dominio.com<br></br>Telefone: (00) 12345-6789
-          </p>
-        </div>
-        <div>
-          <h3>Redes Sociais</h3>
-          <p>
-            <a href="https://www.facebook.com/exemplo">Facebook</a>
-            <br></br>
-            <a href="https://www.twitter.com/exemplo">Twitter</a>
-            <br></br>
-            <a href="https://www.instagram.com/exemplo">Instagram</a>
-          </p>
-        </div>
+       
         <p>© 2024 OMBA. Todos os direitos reservados.</p>
       </Footer>
     </Layout>
