@@ -16,82 +16,82 @@ function PageAcervo() {
   const data = [
     {
       id: "1",
-      image: "src/pages/acervo/Texto do seu parágrafo/1.png",
+      image: "src/assets/img_carrousel/1.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=51",
     },
     {
       id: "2",
-      image: "src/pages/acervo/Texto do seu parágrafo/2.png",
+      image: "src/assets/img_carrousel/2.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=92",
     },
     {
       id: "3",
-      image: "src/pages/acervo/Texto do seu parágrafo/3.png",
+      image: "src/assets/img_carrousel/3.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=89",
     },
     {
       id: "4",
-      image: "src/pages/acervo/Texto do seu parágrafo/4.png",
+      image: "src/assets/img_carrousel/4.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=116",
     },
     {
       id: "5",
-      image: "src/pages/acervo/Texto do seu parágrafo/5.png",
+      image: "src/assets/img_carrousel/5.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=245",
     },
     {
       id: "6",
-      image: "src/pages/acervo/Texto do seu parágrafo/6.png",
+      image: "src/assets/img_carrousel/6.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=123",
     },
     {
       id: "7",
-      image: "src/pages/acervo/Texto do seu parágrafo/7.png",
+      image: "src/assets/img_carrousel/7.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=150",
     },
     {
       id: "8",
-      image: "src/pages/acervo/Texto do seu parágrafo/8.png",
+      image: "src/assets/img_carrousel/8.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=242",
     },
     {
       id: "9",
-      image: "src/pages/acervo/Texto do seu parágrafo/9.png",
+      image: "src/assets/img_carrousel/9.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=111",
     },
     {
       id: "10",
-      image: "src/pages/acervo/Texto do seu parágrafo/10.png",
+      image: "src/assets/img_carrousel/10.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=24",
     },
     {
       id: "11",
-      image: "src/pages/acervo/Texto do seu parágrafo/11.png",
+      image: "src/assets/img_carrousel/11.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=55",
     },
     {
       id: "12",
-      image: "src/pages/acervo/Texto do seu parágrafo/12.png",
+      image: "src/assets/img_carrousel/12.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=80",
     },
     {
       id: "13",
-      image: "src/pages/acervo/Texto do seu parágrafo/13.png",
+      image: "src/assets/img_carrousel/13.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=157",
     },
     {
       id: "14",
-      image: "src/pages/acervo/Texto do seu parágrafo/14.png",
+      image: "src/assets/img_carrousel/14.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=17",
     },
     {
       id: "15",
-      image: "src/pages/acervo/Texto do seu parágrafo/15.png",
+      image: "src/assets/img_carrousel/15.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=60",
     },
     {
       id: "16",
-      image: "src/pages/acervo/Texto do seu parágrafo/16.png",
+      image: "src/assets/img_carrousel/16.png",
       link: "https://lpf.florestal.gov.br/pt-br/?option=com_madeirasbrasileiras&view=especieestudada&especieestudadaid=127",
     },
   ];
